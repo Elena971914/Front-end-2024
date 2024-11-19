@@ -4,61 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="theory-html-css.css">
     <title>Theory</title>
 </head>
 
 <body>
-    <h1>Basic</h1>
-    <ul>
-        <li>What is HTML?
-            <p>HyperText Markup Language - The language that is used to create and design Web pages. It describes web
-                content. Uses tags to define elements in the Web page</p>
-            <p>Markup Language: HTML is not a programming language, but a markup language, which means it is used to
-                structure content on the web.</p>
-            <p>Tags and Elements: HTML uses tags to define elements such as headings, paragraphs, images, links, and
-                other
-                content on the page.</p>
-            <p>Web Structure: HTML provides the basic structure of a website, including headers, footers,
-                navigation menus, paragraphs, images, and links.</p>
-            <p>No Logic or Interactivity: HTML by itself does not handle any logic or interactivity (like
-                dynamic content or user interaction). JavaScript is typically used alongside HTML to add
-                behavior, and CSS (Cascading Style Sheets) is used to style the page.</p>
-        </li>
-        <li>HTML Common Elements
-            <ul>
-                <li>Headings - h1,h2..h6</li>
-                <li>Anchor links - a - used to create hyperlinks.
-                    <ul>
-                        <li>External: External hyperlinks link to pages or resources on different domains (e.g., linking
-                            from your site to another site). Absolute hyperlinks include the full URL (e.g.,
-                            https://www.example.com/page.html)</li>
-                        <li>Local: Local hyperlinks (also called internal hyperlinks) link to pages or resources within
-                            the same website or domain.
-                        </li>
+    <main>
+        <div class="unit">
+            <h1 class="unit-name">Basic</h1>
+            <section>
+                <h2>What is HTML?</h2>
+                <p>HyperText Markup Language - The language that is used to create and design Web pages. It
+                    describes web
+                    content. Uses tags to define elements in the Web page</p>
+                <p>Markup Language: HTML is not a programming language, but a markup language, which means it is
+                    used to
+                    structure content on the web.</p>
+                <p>Tags and Elements: HTML uses tags to define elements such as headings, paragraphs, images, links,
+                    and
+                    other
+                    content on the page.</p>
+                <p>Web Structure: HTML provides the basic structure of a website, including headers, footers,
+                    navigation menus, paragraphs, images, and links.</p>
+                <p>No Logic or Interactivity: HTML by itself does not handle any logic or interactivity (like
+                    dynamic content or user interaction). JavaScript is typically used alongside HTML to add
+                    behavior, and CSS (Cascading Style Sheets) is used to style the page.</p>
+            </section>
+            <section>
+                <h2>HTML Common Elements</h2>
+                <ul>
+                    <li>Headings - h1,h2..h6</li>
+                    <li>Anchor links - a - used to create hyperlinks.
+                        <ul>
+                            <li>External: External hyperlinks link to pages or resources on different domains (e.g.,
+                                linking
+                                from your site to another site). Absolute hyperlinks include the full URL (e.g.,
+                                https://www.example.com/page.html)</li>
+                            <li>Local: Local hyperlinks (also called internal hyperlinks) link to pages or resources
+                                within
+                                the same website or domain.
+                            </li>
+                        </ul>
                         <div>Relative hyperlinks: The term relative hyperlink typically refers to how the URL is
                             written,
-                            not necessarily whether the link is local or external. A relative hyperlink is a type of
-                            link that points to a resource (file or page) within the same website or domain. Relative
+                            not necessarily whether the link is local or external. A relative hyperlink is a
+                            type of
+                            link that points to a resource (file or page) within the same website or domain.
+                            Relative
                             hyperlinks use a path that is relative to the current page or directory.
                             <ul>
                                 <li> A <strong>root-relative</strong> path starts from the root directory of the
-                                    website. It always begins with a forward slash (/), indicating the root of the
+                                    website. It always begins with a forward slash (/), indicating the root of
+                                    the
                                     website. href="/about.html". This link will always go to
-                                    https://www.yourwebsite.com/about (assuming the site’s domain is yourwebsite.com),
-                                    no matter where the link is placed in the folder structure. The /about path is from
+                                    https://www.yourwebsite.com/about (assuming the site’s domain is
+                                    yourwebsite.com),
+                                    no matter where the link is placed in the folder structure. The /about path
+                                    is from
                                     the root directory of the website.</li>
                                 <li>Document-Relative path with <strong>parent .//</strong> directory
                                     href="../portfolio/portfolio.html" Each ../ moves up one level in the folder
                                     hierarchy.</li>
-                                <li>Document-Relative path with <strong>current</strong> directory ./ It's not necessary
+                                <li>Document-Relative path with <strong>current</strong> directory ./ It's not
+                                    necessary
                                     to
                                     include ./ when referencing files in the same directory, but it can be used
                                     explicitly. href="contact.html"</li>
                             </ul>
-                            <p>The link href="#exercise" is a type of anchor link (also called fragment identifier). It
+                            <p>The link href="#exercise" is a type of anchor link (also called fragment
+                                identifier). It
                                 links to a specific section or element within the same page.
                                 The href attribute specifies the destination of the link.</p>
-                            <p>The # symbol is used to indicate an internal link, meaning it will scroll the page to the
+                            <p>The # symbol is used to indicate an internal link, meaning it will scroll the
+                                page to the
                                 location where the element with the ID "exercises" is placed.</p>
                         </div>
 
@@ -74,7 +92,8 @@
                                 <tr>
                                     <td>Path</td>
                                     <td>Relative to the current document or site root.</td>
-                                    <td>Full URL with the domain name, e.g., <code>https://www.example.com</code>.
+                                    <td>Full URL with the domain name, e.g.,
+                                        <code>https://www.example.com</code>.
                                     </td>
                                 </tr>
                                 <tr>
@@ -95,36 +114,139 @@
                             </tbody>
                         </table>
 
-                </li>
-                <li>Images - img
-                    <ul>
-                        <li>src - Specifies the URL or path to the image file you want to display. This can be an
-                            absolute
-                            URL (e.g., https://example.com/image.jpg) or a relative URL (e.g., images/photo.jpg).</li>
-                        <li>alt (alternative text):
+                    </li>
+                    <li>Images - img
+                        <ul>Attributes
+                            <li>src - Specifies the URL or path to the image file you want to display. This can be
+                                an
+                                absolute
+                                URL (e.g., https://example.com/image.jpg) or a relative URL (e.g.,
+                                images/photo.jpg).</li>
+                            <li>alt (alternative text):
 
-                            Provides a text description of the image. This is used for:
-                            Accessibility: Screen readers will read the alt text to help visually impaired users.
-                            SEO: Search engines use the alt text to understand the image content.
-                            Fallback: If the image fails to load, the alt text will be displayed in its place.</li>
-                        <li>width and height - If they are not set - the image appears in its original size.</li>
-                        <li>title (optional): Adds a tooltip when the user hovers over the image. This can be a useful
-                            way to provide additional information about the image.</li>
-                        <li>loading (optional):
-                            Specifies whether the image should be loaded immediately or lazily (i.e., when it comes into
-                            view on the user's screen).
-                            Use loading="lazy" to defer loading the image until the user scrolls near it, improving page
-                            load time and performance.</li>
-                    </ul>
-                </li>
-            </ul>
+                                Provides a text description of the image. This is used for:
+                                Accessibility: Screen readers will read the alt text to help visually impaired
+                                users.
+                                SEO: Search engines use the alt text to understand the image content.
+                                Fallback: If the image fails to load, the alt text will be displayed in its place.
+                            </li>
+                            <li>width and height - If they are not set - the image appears in its original size.
+                            </li>
+                            <li>title (optional): Adds a tooltip when the user hovers over the image. This can be a
+                                useful
+                                way to provide additional information about the image.</li>
+                            <li>loading (optional):
+                                Specifies whether the image should be loaded immediately or lazily (i.e., when it
+                                comes into
+                                view on the user's screen).
+                                Use loading="lazy" to defer loading the image until the user scrolls near it,
+                                improving page
+                                load time and performance.</li>
+                        </ul>
+                        <p>Styling - responsive
+                            img {
+                            max-width: 100%; /* Image will scale down to fit container */
+                            height: auto; /* Maintain aspect ratio */
+                            }
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Attributes</h2>
+                <p>Global Attributes: These attributes can be used on almost any HTML element. Some common global
+                    attributes are:
+                    id: Specifies a unique identifier for the element.
+                    class: Specifies one or more class names for an element (used for styling or scripting).
+                    style: Adds inline CSS styling to the element.
+                    title: Provides additional information about the element (appears when you hover over the
+                    element).
+                    data-*: Used for custom data attributes to store extra information.</p>
+                <p>For a tag: href, target, rel
+                    For img tag: src, alt, width, height
+                    For form tag: action, method, name
+                    For input tag: type, value, placeholder, name
+                    For video tag: src, autoplay, controls</p>
+            </section>
 
-        <li>Headings, Paragraphs, Lists, Images, Links</li>
-        <li>HTML Terminology: Tags and Attributes</li>
-        <li>What is CSS?</li>
-        <li>Combining HTML and CSS Files</li>
-        <li>Inline and Block Elements</li>
-    </ul>
+            <section>
+                <h2>What is CSS?</h2>
+                <p>Cascading styling sheets- Specifies fonts, colors, margins, sizes, positioning, floating, …
+                    CSS rules format: selector { prop1:val1; prop2:val2; … }</p>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Selector Type</th>
+                            <th>HTML Example</th>
+                            <th>CSS Selector</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Select by Element Name</strong></td>
+                            <td>&lt;h1&gt;Page Title&lt;/h1&gt;</td>
+                            <td>h1 { color: blue; }</td>
+                            <td>Selects all &lt;h1&gt; elements and applies blue color.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Select by Class Name</strong></td>
+                            <td>&lt;p class="odd"&gt;Text&lt;/p&gt;</td>
+                            <td>.odd { font-size: 10px; }</td>
+                            <td>Selects elements with the "odd" class and applies a font size of 10px.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Select by ID</strong></td>
+                            <td>&lt;span id="login"&gt;Go&lt;/span&gt;</td>
+                            <td>#login { width: 150px; }</td>
+                            <td>Selects the element with the ID "login" and sets its width to 150px.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Select by Class Name on Specific Element</strong></td>
+                            <td>&lt;a class="login"&gt;Login&lt;/a&gt;</td>
+                            <td>a.login { width: 80px; }</td>
+                            <td>Selects &lt;a&gt; elements with the "login" class and sets their width to 80px.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <p>We can combine selectors like so #news article > h1;
+                    #news article p;
+                    #news p > b.red;
+                    #news span.date;
+                    article>p, section>p
+                </p>
+
+
+            </section>
+            <section>
+                <h2>Combining HTML and CSS Files</h2>
+                <p>&lt;link rel="stylesheet" href="theory-html-css.css"&gt;</p>
+            </section>
+            <section>
+                <h2>Inline and Block Elements</h2>
+                <p> Inline Elements:
+                    a, span, strong, em, b, i, img, code, abbr, u, br, cite, small, time, mark, del, ins, sub, sup
+                </p>
+                <p>Block Elements:
+                    div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, form, header, footer, article, section, nav, table,
+                    blockquote,
+                    figure, aside, address, details, iframe
+                </p>
+                <p>
+                    Inline-Block Elements:
+                    button, input, select, textarea, label, a, img, span
+                </p>
+            </section>
+            <section>
+                <h2>Key combinations</h2>
+                <p> alt+down - move the current line down</p>
+                <p> alt+shift+down - copy and paste current line</p>
+            </section>
+        </div>
+
+    </main>
 
 </body>
 
