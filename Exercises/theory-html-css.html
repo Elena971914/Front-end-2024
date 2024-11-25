@@ -168,7 +168,6 @@
                     For input tag: type, value, placeholder, name
                     For video tag: src, autoplay, controls</p>
             </section>
-
             <section>
                 <h2>What is CSS?</h2>
                 <p>Cascading styling sheets- Specifies fonts, colors, margins, sizes, positioning, floating, …
@@ -243,6 +242,53 @@
                 <h2>Key combinations</h2>
                 <p> alt+down - move the current line down</p>
                 <p> alt+shift+down - copy and paste current line</p>
+            </section>
+            <section>
+                <h2>Centering elements</h2>
+                <ol>
+                    <li>
+                        <p class="summary">margin: 0 auto</p>
+                        <p class="details">Requires a defined width to work for horizontal centering. Centers block-level elements within a container.</p>
+                    </li>
+                    <li>
+                        <p class="summary">Flexbox</p>
+                        <p class="details">Use display: flex with justify-content: center (horizontal) and align-items: center (vertical) for centering. Works without needing to define width or height explicitly.</p>
+                    </li>
+                    <li>
+                        <p class="summary">text-align: center</p>
+                        <p class="details">Centers inline or inline-block elements horizontally within a parent.</p>
+                    </li>
+                    <li>
+                        <p class="summary">position: absolute + transform</p>
+                        <p class="details">Use top: 50% and left: 50%, then transform: translate(-50%, -50%) to center an element relative to its parent.</p>
+                    </li>
+                    <li>
+                        <p class="summary">CSS Grid</p>
+                        <p class="details">Use display: grid with place-items: center for easy centering both horizontally and vertically.</p>
+                    </li>
+                    <li>
+                        <p class="summary">Block-level Elements</p>
+                        <p class="details">Set width and use margin: 0 auto to center block-level elements.</p>
+                    </li>
+                    <li>
+                        <p class="summary">Viewport Centering</p>
+                        <p class="details">Use vh and vw units with position: absolute to center elements relative to the viewport.</p>
+                    </li>
+                    <li>
+                        <p class="summary">Inline and Flex Items</p>
+                        <p class="details">Combine display: inline-block with Flexbox for centering mixed types of elements.</p>
+                    </li>
+                    <li>
+                        <p class="summary">Vertical Centering with line-height</p>
+                        <p class="details">Set line-height equal to the container height to center text vertically.</p>
+                    </li>
+                    <li>
+                        <p class="summary">margin: auto in Flexbox</p>
+                        <p class="details">Use margin: auto on a flex item to center it inside a flex container.</p>
+                    </li>
+                </ol>
+                
+
             </section>
         </div>
 
