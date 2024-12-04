@@ -2,12 +2,35 @@
 
 Dimly Blue: #e8f9fd
 
-Alert/Highlight Green: #59ce8f */
+Alert/Highlight Green: #59ce8f 
+#a6e4e7 - blue 
+#f9f9f9 - white
+#ebcbae - beige
+#8f8787 - brown
+*/
 
+/* .montserrat-classic {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+html {
+    height: 100%;
+    font-family: montserrat, sans-serif;
+}
+
+body {
+    position:relative;
+    height:100%;
+    min-height: 100%;
+}
 
 .nav-ul {
     list-style: none;
-    text-align:center
+    text-align:center;
+    font-variant: small-caps
 }
 
 .nav-li {
@@ -20,6 +43,15 @@ Alert/Highlight Green: #59ce8f */
 
 .nav-a {
     text-decoration: none;
-    color: #59ce8f
+    color:  #a6e4e7
 }
 
+footer {
+    position:absolute;
+    bottom:0;
+    color: white;
+    background-color: #a6e4e7;
+    text-align: center;
+    padding: 10px;
+    width: 100%
+}
